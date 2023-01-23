@@ -1,0 +1,4 @@
+com/modmed/clinical/apis/utils/ConfigManager.class
+com/modmed/clinical/apis/model/Patient.class
+com/modmed/clinical/apis/helpers/PatientServiceHelper.class
+com/modmed/clinical/apis/constants/EndPoint.class
