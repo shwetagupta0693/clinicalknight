@@ -1,6 +1,7 @@
 package com.modmed.clinical.apis.constants;
 
 public class EndPoints {
-    public static final String Get_All_Users = "/users?page={id}";
-    public static final String Get_User = "/users/{id}";
+    public static final String Get_Pet_Specific_Status = "/v2/pet/findByStatus?";
+    public static final String Add_New_Pet = "/v2/pet";
+
 }

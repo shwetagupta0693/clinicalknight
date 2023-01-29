@@ -1,4 +1,4 @@
 package com.modmed.clinical.apis.tests;
 
-public class PatientPostTest {
+public class PetPostTest {
 }
