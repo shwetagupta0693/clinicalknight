@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/argneshu.gupta/clinicalknight">
+        <classes>
+            <class name="com.modmed.clinical.apis.tests.PetGetTest">
+<!--            <methods>-->
+<!--                <include name="postRequest"/>-->
+<!--                <include name="getPet"/>-->
+<!--                <include name="getPetStatus"/>-->
+<!--            </methods>-->
+        </class>
+            <class name="com.modmed.clinical.apis.tests.PetPostTest">
+<!--                <methods>-->
+<!--                    <include name="createNewPet"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>
