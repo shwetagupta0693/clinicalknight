@@ -1,6 +1,5 @@
 package com.modmed.clinical.apis.helpers;
 
-import com.fasterxml.jackson.databind.ser.Serializers;
 import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
@@ -15,8 +14,9 @@ abstract public class BaseService {
     private static final String Base_URL = ConfigManager.getInstance().getString("baseUrl");
 
     public BaseService(){
-        playwright = Playwright.create();
-        this.apiRequestContext = playwright.request().newContext(new APIRequest.NewContextOptions().setBaseURL(this.Base_URL));
+        this.playwright = Playwright.create();
+        this.apiRequestContext = playwright.request().newContext(new APIRequest.NewContextOptions().setBaseURL(Base_URL));
+
     }
 
     protected APIResponse get(String endpoints, RequestOptions params){

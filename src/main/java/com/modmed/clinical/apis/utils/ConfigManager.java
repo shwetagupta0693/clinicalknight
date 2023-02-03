@@ -9,6 +9,7 @@ public class ConfigManager {
     private static ConfigManager manager;
     private final static Properties prop = new Properties();
 
+
     private ConfigManager() throws IOException {
         InputStream stream = ConfigManager.class.getResourceAsStream("/config.properties");
         prop.load(stream);
@@ -27,7 +28,7 @@ public class ConfigManager {
         return manager;
     }
 
-    public String getString(String key){
+    public static String getString(String key){
         return System.getProperty(key,prop.getProperty(key));
     }
 }

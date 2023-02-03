@@ -7,7 +7,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="/Users/argneshu.gupta/clinicalknight">
         <classes>
-            <class name="com.modmed.clinical.apis.tests.PetGetTest">
+            <class name="com.modmed.clinical.apis.tests.TaskTest">
 <!--            <methods>-->
 <!--                <include name="postRequest"/>-->
 <!--                <include name="getPet"/>-->

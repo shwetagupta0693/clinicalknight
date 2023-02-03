@@ -17,7 +17,7 @@ public class PetPostTest {
     PetServiceHelper petServiceHelper = new PetServiceHelper();
 
     @Test
-    public void createNewPet() throws ParseException {
+    public void verifyCreationOfNewPet() throws ParseException {
         String newPetText = petServiceHelper.createNewPet().text();
         Assert.assertNotNull(newPetText);
         Pet pet = JsonUtil.getJsonObject(Pet.class, newPetText);
